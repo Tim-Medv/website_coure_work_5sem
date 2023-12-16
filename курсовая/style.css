@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #e67380, #d3a1a9, #d3a1a9, #e67380);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    text-align: center;
+}
+
+.game-title {
+    color: #fff;
+    font-size: 48px; 
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px #000; 
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-button {
+    background-color: #fff;
+    border: 2px solid #d3a1a9;
+    color: #333;
+    padding: 20px 40px;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.game-button:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+.difficulty-button {
+    border: 2px solid #161314;
+    color: #333;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.difficulty-button:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+.difficulty-button.easy {
+    background-color: #4CAF50;
+}
+
+.difficulty-button.medium {
+    background-color: #FFEB3B;
+}
+
+.difficulty-button.hard {
+    background-color: #F44336; 
+}
+
+.player-name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+}
+
+.player-name-input {
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 20px; 
+    width: 50%;
+    border: 2px solid #d3a1a9; 
+}
+
+.small-button {
+    padding: 10px 20px; 
+    font-size: 18px;
+    margin-top: 20px; 
+}
+
+
+
+
+
+#ranking-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000; /* Чтобы быть поверх остальных элементов */
+}
+
+#ranking-title {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#ranking-list {
+    max-height: 300px;
+    overflow-y: auto; /* Скролл если контент не помещается */
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#ranking-list div {
+    font-size: 20px; /* Увеличиваем размер шрифта для записей рейтинга */
+    text-align: center; /* Выравниваем текст по центру */
+    margin: 10px 0; /* Добавляем отступы для каждой записи */
+}
+
+
+#close-ranking {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #e67380;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+#close-ranking:hover {
+    background-color: #ff9a9e;
+}
+
+
